@@ -1,5 +1,6 @@
 #!/bin/sh 
 cd $(dirname $0)
-echo $(date) >> commit.txt
-git commit -am "daily $(date)"
+txt=$(date +"%Y-%m-%d %H:%M.%S")
+echo $txt  >> commit.txt
+git commit -am "daily commit  $txt"
 git push

@@ -11,7 +11,7 @@ gitfun(){
 
 main(){
   times=$RANDOM
-  ((times=times%2+1))
+  ((times=times%3+1))
   for  ((i=0; i<=times; i++))
   do
     echo "change $i/$times"
